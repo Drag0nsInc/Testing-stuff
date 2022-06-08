@@ -15,17 +15,16 @@ body {
 
 </head>
 <body>
-    
- <button type="button" onclick=play(Joer.mp3)>
-    <img src='2 companion.png' width=2000 height=2000 >
-     
-     </img>
-    </button>
+   
+<script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
 
-    <audio id="Joer">
-  <source src="Joer.mp3">
-</audio>
-
+    <input type="button" value="PLAY" onclick="play()">
+    <audio id="audio" src="joer.mp3"></audio>
 
 </body>
 </html>
