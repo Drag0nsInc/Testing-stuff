@@ -17,10 +17,12 @@ body {
 <body>
    
 <script>
-      function play() {
-        var audio = document.getElementById("audio");
-        audio.play();
-      }
+    var audio = $("#audio");
+$("audioimg").mouseenter( function() {
+    audio.play();
+}
+
+<img id="audioimg" src="2 companion.png">
     </script>
 
     <input type="button" value="PLAY" onclick="play()">
